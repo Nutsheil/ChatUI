@@ -2,7 +2,7 @@ const jsonServer = require('json-server')
 
 const server = jsonServer.create()
 const middlewares = jsonServer.defaults()
-const router = jsonServer.router('db.json')
+const router = jsonServer.router('./db.json')
 
 server.use(middlewares)
 server.use(jsonServer.bodyParser)
@@ -21,7 +21,8 @@ server.post('/messages', (req, res) => {
 
   // router.db.get('messages').push({ message }).write()
 
-  res.status(200).json({ text: mockResponses[index] })
+  // res.status(200).json({ text: mockResponses[index] })
+  res.status(200).json({ text: message })
 })
 
 server.use(router)
