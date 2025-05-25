@@ -1,0 +1,21 @@
+.message_list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 16px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #4b5563 transparent;
+}
+
+.message_list::-webkit-scrollbar {
+  width: 6px;
+}
+.message_list::-webkit-scrollbar-track {
+  background: transparent;
+}
+.message_list::-webkit-scrollbar-thumb {
+  background-color: #4b5563;
+  border-radius: 4px;
+}

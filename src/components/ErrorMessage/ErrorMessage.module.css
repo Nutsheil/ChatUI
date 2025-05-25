@@ -1,0 +1,11 @@
+.container {
+  position: fixed;
+  max-width: 200px;
+  border-radius: 8px;
+  bottom: 16px;
+  left: 8px;
+  padding: 8px 12px;
+  font-size: 12px;
+  background: rgb(230, 6, 6);
+  color: white;
+}
